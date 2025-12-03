@@ -2,42 +2,190 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Mini studio musique</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- Import de Tone.js -->
-  <script src="https://unpkg.com/tone@latest/build/Tone.js"></script>
+  <title>Ressources ICT Mentorship</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #060b10;
+      color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #10151f;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    h1 { margin: 0 0 10px; }
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 15px 40px;
+    }
+    .note {
+      font-size: 13px;
+      color: #b0b0b0;
+      margin-bottom: 20px;
+    }
+    .playlist {
+      background: #111827;
+      border: 1px solid #1f2937;
+      border-radius: 10px;
+      padding: 15px 18px;
+      margin-bottom: 15px;
+    }
+    .playlist h2 {
+      margin: 0 0 5px;
+      font-size: 18px;
+    }
+    .meta {
+      font-size: 13px;
+      color: #9ca3af;
+      margin-bottom: 8px;
+    }
+    .playlist a {
+      color: #60a5fa;
+      text-decoration: none;
+    }
+    .playlist a:hover {
+      text-decoration: underline;
+    }
+    .tags {
+      margin-top: 8px;
+      font-size: 12px;
+    }
+    .tag {
+      display: inline-block;
+      background: #1f2937;
+      color: #d1d5db;
+      padding: 3px 7px;
+      border-radius: 999px;
+      margin-right: 5px;
+      margin-bottom: 3px;
+    }
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: #6b7280;
+      padding: 15px 10px 25px;
+      border-top: 1px solid #111827;
+      background: #05070c;
+    }
+  </style>
 </head>
 <body>
-  <h1>Mini studio musique</h1>
+<header>
+  <h1>Ressources ICT Mentorship</h1>
+  <p>Index non-officiel des principales playlists de formation d’Inner Circle Trader (ICT).</p>
+</header>
 
-  <button id="startAudio">Activer l'audio</button>
+<div class="container">
 
-  <div class="controls">
-    <label>
-      Mélodie:
-      <select id="melodySelect">
-        <option value="C4 D4 E4 G4 A4">Montée</option>
-        <option value="C4 E4 G4 C5">Accord brisé</option>
-        <option value="C4 Bb3 G3 E3">Descente</option>
-      </select>
-    </label>
+  <p class="note">
+    Tous les liens pointent vers la chaîne YouTube officielle « The Inner Circle Trader ». 
+    Ce site ne stocke aucune vidéo, il référence uniquement les playlists publiques. 
+  </p>
 
-    <label>
-      Tempo (BPM):
-      <input type="number" id="bpmInput" value="120" min="40" max="240">
-    </label>
-
-    <label>
-      Volume:
-      <input type="range" id="volumeInput" min="-30" max="0" value="-10">
-    </label>
+  <!-- Lien vers toutes les playlists ICT -->
+  <div class="playlist">
+    <h2>Toutes les playlists ICT</h2>
+    <div class="meta">
+      Chaîne officielle YouTube « The Inner Circle Trader ». [web:26][web:40]
+    </div>
+    <a href="https://www.youtube.com/c/InnerCircleTrader/playlists" target="_blank" rel="noopener">
+      Ouvrir la page des playlists
+    </a>
+    <div class="tags">
+      <span class="tag">Toutes séries</span>
+      <span class="tag">Chaîne officielle</span>
+    </div>
   </div>
 
-  <div class="buttons">
-    <button id="playBtn">▶️ Jouer</button>
-    <button id="stopBtn">⏹️ Stop</button>
+  <!-- 2016 Core Content -->
+  <div class="playlist">
+    <h2>2016 ICT Private Mentorship Core Content</h2>
+    <div class="meta">
+      Cœur du contenu pédagogique historique (série Core Content). [web:26][web:40]
+    </div>
+    <a href="https://www.youtube.com/playlist?list=PLM4aqj2n0o00VnjG6NX5Cy0Z0-CC3jHda" target="_blank" rel="noopener">
+      Voir la playlist 2016 Core Content
+    </a>
+    <div class="tags">
+      <span class="tag">Core content</span>
+      <span class="tag">Structure de marché</span>
+    </div>
   </div>
 
-  <script src="script.js"></script>
+  <!-- 2022 Mentorship -->
+  <div class="playlist">
+    <h2>2022 ICT Mentorship</h2>
+    <div class="meta">
+      Grande série de mentorat 2022, souvent recommandée comme point de départ. [web:21][web:28][web:30][web:34]
+    </div>
+    <a href="https://www.youtube.com/playlist?list=PLVgHx4Z63paYiFGQ56PjTF1PGePL3r69s" target="_blank" rel="noopener">
+      Voir la playlist 2022 Mentorship
+    </a>
+    <div class="tags">
+      <span class="tag">Mentorship 2022</span>
+      <span class="tag">Forex & indices</span>
+    </div>
+  </div>
+
+  <!-- 2023 Mentorship -->
+  <div class="playlist">
+    <h2>2023 ICT Mentorship</h2>
+    <div class="meta">
+      Suite du mentorat avec focus sur indices et revue quotidienne des marchés. [web:22][web:29][web:32]
+    </div>
+    <a href="https://www.youtube.com/playlist?list=PLVgHx4Z63pabpjlduWBaEsn8VMtALhjGV" target="_blank" rel="noopener">
+      Voir la playlist 2023 Mentorship
+    </a>
+    <div class="tags">
+      <span class="tag">Mentorship 2023</span>
+      <span class="tag">Index futures</span>
+    </div>
+  </div>
+
+  <!-- 2024 Mentorship -->
+  <div class="playlist">
+    <h2>2024 ICT Mentorship</h2>
+    <div class="meta">
+      Série de mentorat 2024, avec épisodes orientés CFD vs futures, micro vs mini, etc. [web:23][web:32]
+    </div>
+    <a href="https://www.youtube.com/playlist?list=PLVgHx4Z63paaM41aubnHOmqfeNjSAoBCV" target="_blank" rel="noopener">
+      Voir la playlist 2024 Mentorship
+    </a>
+    <div class="tags">
+      <span class="tag">Mentorship 2024</span>
+      <span class="tag">CFD & Futures</span>
+    </div>
+  </div>
+
+  <!-- Recos d'ordre de visionnage (liens externes) -->
+  <div class="playlist">
+    <h2>Ordre de visionnage recommandé</h2>
+    <div class="meta">
+      Quelques ressources externes suggèrent un ordre de visionnage (par ex. commencer par 2016 Core + 2022 Mentorship). [web:24][web:25][web:34]
+    </div>
+    <a href="https://www.youtube.com/watch?v=FFztzFT5vJ0" target="_blank" rel="noopener">
+      Vidéo : « Which ICT Playlist to watch »
+    </a><br>
+    <a href="https://www.youtube.com/watch?v=XOv7LkdL4rU" target="_blank" rel="noopener">
+      Vidéo : « TOP 5 ICT PLAYLISTS | Forex For Beginners »
+    </a>
+    <div class="tags">
+      <span class="tag">Conseils</span>
+      <span class="tag">Débutants ICT</span>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  Site non-officiel, à but éducatif uniquement. Toutes les marques et contenus vidéo 
+  appartiennent à leurs propriétaires respectifs (ICT / YouTube).
+</footer>
 </body>
 </html>
