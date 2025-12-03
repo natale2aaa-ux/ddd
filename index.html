@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini studio musique</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Import de Tone.js -->
+  <script src="https://unpkg.com/tone@latest/build/Tone.js"></script>
+</head>
+<body>
+  <h1>Mini studio musique</h1>
+
+  <button id="startAudio">Activer l'audio</button>
+
+  <div class="controls">
+    <label>
+      Mélodie:
+      <select id="melodySelect">
+        <option value="C4 D4 E4 G4 A4">Montée</option>
+        <option value="C4 E4 G4 C5">Accord brisé</option>
+        <option value="C4 Bb3 G3 E3">Descente</option>
+      </select>
+    </label>
+
+    <label>
+      Tempo (BPM):
+      <input type="number" id="bpmInput" value="120" min="40" max="240">
+    </label>
+
+    <label>
+      Volume:
+      <input type="range" id="volumeInput" min="-30" max="0" value="-10">
+    </label>
+  </div>
+
+  <div class="buttons">
+    <button id="playBtn">▶️ Jouer</button>
+    <button id="stopBtn">⏹️ Stop</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
